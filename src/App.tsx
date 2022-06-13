@@ -1,5 +1,7 @@
+import Dashboard from "./core/public/Dashboard/Dashboard";
+
 function App() {
-  return <h2>hello</h2>;
+  return <Dashboard />;
 }
 
 export default App;
