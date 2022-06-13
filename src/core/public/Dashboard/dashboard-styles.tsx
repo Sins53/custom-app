@@ -1,4 +1,4 @@
-import { Box, FlexBox, Text } from "@/components/core";
+import { Box, Text } from "@/components/core";
 import { LIGHT_THEME_ID } from "@/theme";
 import { coolGray } from "@/theme/colors";
 import styled, { DefaultTheme } from "styled-components";
@@ -10,9 +10,6 @@ export const getBaseColor = (theme: DefaultTheme) => {
     return "#fff";
   }
 };
-interface IconProps {
-  color?: string;
-}
 
 export const StatBox = styled(Box)`
   background-color: ${(props) => props.theme.color.background};
@@ -26,17 +23,4 @@ export const StatDescription = styled(Text)`
 `;
 export const StatCount = styled(Text)`
   color: ${(props) => getBaseColor(props.theme)};
-`;
-
-export const IconContainer = styled(FlexBox)<IconProps>`
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  svg {
-    font-size: 2rem;
-  }
-  background-color: ${(props) => (props.color ? props.color : coolGray[500])};
 `;

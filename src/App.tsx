@@ -1,7 +1,14 @@
-import Dashboard from "./core/public/Dashboard/Dashboard";
+// import Dashboard from "./core/public/Dashboard/Dashboard";
+
+import { ThemePractise } from "./core/public/Practise/ThemePractise";
 
 function App() {
-  return <Dashboard />;
+  return (
+    <>
+      {/* <Dashboard />; */}
+      <ThemePractise />
+    </>
+  );
 }
 
 export default App;
